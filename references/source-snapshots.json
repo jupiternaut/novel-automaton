@@ -1,0 +1,38 @@
+[
+  {
+    "path": "plm/PLM_WRITING_SPEC_HANDOFF.md",
+    "source": "/home/grf/drama-browser/vendor/plotpilot/docs/PLM_WRITING_SPEC_HANDOFF.md",
+    "commit": "95e93a4fc69b9c6f5e0dd363491e475a559c4bf5",
+    "sha256": "9b761ae2613f6f0a62f62f2b23ec3c06e4dcfa49d0fb788ed0beb43ed9f48766"
+  },
+  {
+    "path": "plm/LICENSE",
+    "source": "/home/grf/drama-browser/vendor/plotpilot/LICENSE",
+    "commit": "95e93a4fc69b9c6f5e0dd363491e475a559c4bf5",
+    "sha256": "fc2aa7e5e3f55eb7dc0d53b55c7deb330a217c91f7a8dc6a43ab35c59ac703e1"
+  },
+  {
+    "path": "tavern/staged-theater-control-loop.md",
+    "source": "/home/grf/drama-browser/docs/research/staged-theater-control-loop.md",
+    "commit": "95e93a4fc69b9c6f5e0dd363491e475a559c4bf5",
+    "sha256": "5dc4c61e04f57d6a692cb021e341f0aec9a48e92506bfdd378b11f0e03848dac"
+  },
+  {
+    "path": "tavern/LICENSE",
+    "source": "/home/grf/drama-browser/LICENSE",
+    "commit": "95e93a4fc69b9c6f5e0dd363491e475a559c4bf5",
+    "sha256": "9a75ace1224f0f880ddfdd8442d14d5a0d865152c61a2fd363d8e2c351f94d2c"
+  },
+  {
+    "path": "lightrag/LOCAL_FORK.md",
+    "source": "/home/grf/Documents/yaonvkanzhao-lightrag-publish-20260922/LOCAL_FORK.md",
+    "commit": "6bb06920514ecbd1cae1db3a3b7bae92a7c6f08d",
+    "sha256": "984651ad3505c973710e7472c5a9ecbdc405c44fc4c2973b9726fdc40f7d80a0"
+  },
+  {
+    "path": "lightrag/LICENSE",
+    "source": "/home/grf/Documents/yaonvkanzhao-lightrag-publish-20260922/LICENSE",
+    "commit": "6bb06920514ecbd1cae1db3a3b7bae92a7c6f08d",
+    "sha256": "0c16924564059e493c86854574660a47ed1dcc2a476ba7b5f949d3f2f73a1984"
+  }
+]

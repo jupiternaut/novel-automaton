@@ -1,0 +1,804 @@
+{
+  "version": "0.2",
+  "status": "draft_example_not_runtime",
+  "branch_id": "opening-v0.2",
+  "source_policy": {
+    "source_kind": "与certainty和acceptance分开保存",
+    "unknowns": "显式保存；不从摘要自动补齐",
+    "old_novel": "风格参考，不自动继承身份、能力、物资或事件"
+  },
+  "canon": [
+    {
+      "id": "C01",
+      "fact": "男主为南京理工大学男学生",
+      "status": "user_established",
+      "source": "PDF第97页"
+    },
+    {
+      "id": "C02",
+      "fact": "场景为2026年生活环境，来电声称2029，外层实际年代2099",
+      "status": "user_established",
+      "source": "PDF第97、109页"
+    },
+    {
+      "id": "C03",
+      "fact": "来电引导涉及AI；具体实体连续性未定",
+      "status": "user_established_direction",
+      "source": "PDF第109页"
+    },
+    {
+      "id": "C04",
+      "fact": "湿件大脑承担预训练并扩张湿件网络",
+      "status": "user_established",
+      "source": "PDF第79页"
+    },
+    {
+      "id": "C05",
+      "fact": "正文情报经主角可接触渠道披露，读者可作不同推断",
+      "status": "current_user_preference",
+      "source": "../../sources/gui-xiang-yi-qi/会话可见正文.md（原会话第4710行）及本任务用户消息"
+    }
+  ],
+  "initial_state": {
+    "characters": {
+      "student": {
+        "role": "男学生",
+        "location": "rear_door_inside",
+        "physical_condition": "uninjured",
+        "items": [
+          "phone",
+          "lighter",
+          "cigarettes"
+        ],
+        "stable_traits": [],
+        "knowledge": "从events.observations派生"
+      },
+      "girl": {
+        "role": "前日认识的女孩，关系尚未确定",
+        "location": null,
+        "last_observed_location": null,
+        "infection_status": "unknown"
+      },
+      "departing_1": {
+        "role": "携电脑包的人",
+        "location": "stairs",
+        "last_observed_location": "stairs",
+        "infection_status": "unknown"
+      },
+      "departing_2": {
+        "role": "拿茶杯的人",
+        "location": "stairs",
+        "last_observed_location": "stairs",
+        "infection_status": "unknown"
+      },
+      "caller": {
+        "role": "电话引导者",
+        "location": null,
+        "identity_continuity": "unknown"
+      },
+      "notice_sender": {
+        "role": "年级群通知发送者",
+        "authority": "unknown"
+      },
+      "outside_people": {
+        "role": "白车旁两人",
+        "location": "courtyard",
+        "infection_status": "unknown",
+        "intention": "unknown"
+      }
+    },
+    "locations": {
+      "rear_door_inside": {
+        "visible": "院子局部",
+        "occluded": "白车后的院子出口与楼上房间"
+      },
+      "upper_rooms": {
+        "access": "unknown"
+      },
+      "front_hall": {
+        "access": "unknown"
+      }
+    },
+    "objects": {
+      "phone": {
+        "owner": "student",
+        "call_state": "idle"
+      },
+      "rear_door": {
+        "state": "closed"
+      },
+      "group_messages": {
+        "items": []
+      }
+    },
+    "organizations": {
+      "campus": {
+        "full_response_state": "unknown"
+      },
+      "park_operator": {
+        "existence": "canon_direction",
+        "current_interventions": "unknown"
+      }
+    },
+    "rules": {
+      "physical_year": 2099,
+      "scene_year": 2026,
+      "time_travel_confirmed": false,
+      "public_canon_visibility": "author_only"
+    },
+    "active_processes": {
+      "waiting": {
+        "status": "not_started",
+        "elapsed_minutes": null
+      },
+      "call": {
+        "status": "not_started",
+        "duration_seconds": null
+      },
+      "infection_network": {
+        "status": "background_canon",
+        "local_progress": "unknown"
+      }
+    }
+  },
+  "events": [
+    {
+      "id": "E01",
+      "branch_id": "opening-v0.2",
+      "acceptance": "proposed",
+      "story_time": {
+        "physical_year": 2099,
+        "scene_year": 2026,
+        "relative_order": 1,
+        "exact_time": null
+      },
+      "participants": [
+        "student",
+        "girl"
+      ],
+      "preconditions": [
+        "两人在后楼梯有过交谈"
+      ],
+      "intention": [
+        {
+          "actor": "student",
+          "goal": "等女孩收好东西，之后一起行动",
+          "certainty": "inferred_from_scene"
+        }
+      ],
+      "action": {
+        "actors": [
+          "student",
+          "girl"
+        ],
+        "description": "女孩说回实验室收东西，向楼上走；男主留下等候"
+      },
+      "effects": [
+        {
+          "path": "/active_processes/waiting/status",
+          "before": "not_started",
+          "after": "active"
+        },
+        {
+          "path": "/characters/girl/last_observed_location",
+          "before": null,
+          "after": "upper_stair_landing"
+        }
+      ],
+      "observations": [
+        {
+          "observer": "student",
+          "kind": "direct_observation",
+          "content": "女孩上楼，并说大约五分钟；确切房间未见"
+        }
+      ],
+      "uncertainty": [
+        "女孩实际去了哪间房尚未揭示"
+      ],
+      "evidence": {
+        "document": "../drafts/01-临时通知-v0.2.md",
+        "exact_text": "我说不急。",
+        "source_kind": "assistant_draft"
+      },
+      "revealed_at": {
+        "chapter": 1,
+        "scene": "opening-half",
+        "quote": "我说不急。"
+      },
+      "certainty": "explicit_in_draft_not_adopted_canon"
+    },
+    {
+      "id": "E02",
+      "branch_id": "opening-v0.2",
+      "acceptance": "proposed",
+      "story_time": {
+        "physical_year": 2099,
+        "scene_year": 2026,
+        "relative_order": 2,
+        "exact_time": null
+      },
+      "participants": [
+        "student",
+        "notice_sender"
+      ],
+      "preconditions": [
+        "男主能读取年级群"
+      ],
+      "intention": [
+        {
+          "actor": "notice_sender",
+          "goal": null,
+          "certainty": "unknown"
+        }
+      ],
+      "action": {
+        "actors": [
+          "notice_sender"
+        ],
+        "description": "年级群出现健康与清洁通知"
+      },
+      "effects": [
+        {
+          "path": "/objects/group_messages/items",
+          "before": [],
+          "after": [
+            "notice_1"
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "observer": "student",
+          "kind": "message_received",
+          "content": "群通知声明正常秩序和预防性清洁"
+        }
+      ],
+      "uncertainty": [
+        "通知内容是否完整或真实，未知；并非已证实有全面消杀"
+      ],
+      "evidence": {
+        "document": "../drafts/01-临时通知-v0.2.md",
+        "exact_text": "学校教学及生活秩序正常",
+        "source_kind": "assistant_draft"
+      },
+      "revealed_at": {
+        "chapter": 1,
+        "scene": "opening-half",
+        "quote": "学校教学及生活秩序正常"
+      },
+      "certainty": "explicit_in_draft_not_adopted_canon"
+    },
+    {
+      "id": "E03",
+      "branch_id": "opening-v0.2",
+      "acceptance": "proposed",
+      "story_time": {
+        "physical_year": 2099,
+        "scene_year": 2026,
+        "relative_order": 3,
+        "exact_time": null
+      },
+      "participants": [
+        "student"
+      ],
+      "preconditions": [
+        "身处后门内侧，院子部分可见"
+      ],
+      "intention": [],
+      "action": {
+        "actors": [
+          "student"
+        ],
+        "description": "透过玻璃观察白车和两个人，并猜测是后勤人员"
+      },
+      "effects": [],
+      "observations": [
+        {
+          "observer": "student",
+          "kind": "direct_observation",
+          "content": "白车停在院子，车尾两人，其中一人用塑料袋套手"
+        },
+        {
+          "observer": "student",
+          "kind": "tentative_belief",
+          "content": "把他们解释为后勤搬东西"
+        }
+      ],
+      "uncertainty": [
+        "车辆何时到达、人员身份及动机均未知"
+      ],
+      "evidence": {
+        "document": "../drafts/01-临时通知-v0.2.md",
+        "exact_text": "门外多了辆白色的车。",
+        "source_kind": "assistant_draft"
+      },
+      "revealed_at": {
+        "chapter": 1,
+        "scene": "opening-half",
+        "quote": "门外多了辆白色的车。"
+      },
+      "certainty": "explicit_in_draft_not_adopted_canon"
+    },
+    {
+      "id": "E04",
+      "branch_id": "opening-v0.2",
+      "acceptance": "proposed",
+      "story_time": {
+        "physical_year": 2099,
+        "scene_year": 2026,
+        "relative_order": 4,
+        "exact_time": null
+      },
+      "participants": [
+        "student",
+        "caller"
+      ],
+      "preconditions": [
+        "手机可接收电话",
+        "男主接听"
+      ],
+      "intention": [
+        {
+          "actor": "caller",
+          "goal": "要求男主不要开门",
+          "certainty": "explicit_request"
+        }
+      ],
+      "action": {
+        "actors": [
+          "caller",
+          "student"
+        ],
+        "description": "陌生电话接通，对方准确描述男主位置和正在等人"
+      },
+      "effects": [
+        {
+          "path": "/objects/phone/call_state",
+          "before": "idle",
+          "after": "connected"
+        },
+        {
+          "path": "/active_processes/call/status",
+          "before": "not_started",
+          "after": "active"
+        }
+      ],
+      "observations": [
+        {
+          "observer": "student",
+          "kind": "message_received",
+          "content": "陌生人知道门、手的位置和等人的情况"
+        },
+        {
+          "observer": "student",
+          "kind": "hypothesis",
+          "content": "怀疑是女孩换号码或从楼上打来的"
+        }
+      ],
+      "uncertainty": [
+        "来电者的信息来源未披露；准确描述不证明未来通信"
+      ],
+      "evidence": {
+        "document": "../drafts/01-临时通知-v0.2.md",
+        "exact_text": "把手从门上拿开。",
+        "source_kind": "assistant_draft"
+      },
+      "revealed_at": {
+        "chapter": 1,
+        "scene": "opening-half",
+        "quote": "把手从门上拿开。"
+      },
+      "certainty": "explicit_in_draft_not_adopted_canon"
+    },
+    {
+      "id": "E05",
+      "branch_id": "opening-v0.2",
+      "acceptance": "proposed",
+      "story_time": {
+        "physical_year": 2099,
+        "scene_year": 2026,
+        "relative_order": 5,
+        "exact_time": null
+      },
+      "participants": [
+        "student",
+        "departing_1",
+        "departing_2"
+      ],
+      "preconditions": [
+        "男主收到警告",
+        "男主站在出口",
+        "两人需要通行"
+      ],
+      "intention": [
+        {
+          "actor": "student",
+          "goal": "延缓他人出门，弄清警告",
+          "certainty": "inferred_from_action"
+        }
+      ],
+      "action": {
+        "actors": [
+          "student",
+          "departing_1",
+          "departing_2"
+        ],
+        "description": "两名人员下楼，男主挡门并要求等一下，无法说明原因"
+      },
+      "effects": [],
+      "observations": [
+        {
+          "observer": "student",
+          "kind": "direct_observation",
+          "content": "两人要求借过并看着自己"
+        },
+        {
+          "observer": "student",
+          "kind": "self_report",
+          "content": "担心被认为不正常，无法给出阻止理由"
+        }
+      ],
+      "uncertainty": [
+        "旁人是否认为男主有病不能作为其客观心理"
+      ],
+      "evidence": {
+        "document": "../drafts/01-临时通知-v0.2.md",
+        "exact_text": "我挡着门。",
+        "source_kind": "assistant_draft"
+      },
+      "revealed_at": {
+        "chapter": 1,
+        "scene": "opening-half",
+        "quote": "我挡着门。"
+      },
+      "certainty": "explicit_in_draft_not_adopted_canon"
+    },
+    {
+      "id": "E06",
+      "branch_id": "opening-v0.2",
+      "acceptance": "proposed",
+      "story_time": {
+        "physical_year": 2099,
+        "scene_year": 2026,
+        "relative_order": 6,
+        "exact_time": null
+      },
+      "participants": [
+        "student",
+        "departing_1",
+        "departing_2"
+      ],
+      "preconditions": [
+        "两人到达门内",
+        "门可开启",
+        "男主没有继续有效阻拦"
+      ],
+      "intention": [
+        {
+          "actor": "departing_2",
+          "goal": "从后门离开",
+          "certainty": "inferred_from_action"
+        }
+      ],
+      "action": {
+        "actors": [
+          "departing_1",
+          "departing_2"
+        ],
+        "description": "其中一人称大厅不让走，推门；两人从后门离开"
+      },
+      "effects": [
+        {
+          "path": "/objects/rear_door/state",
+          "before": "closed",
+          "after": "open"
+        },
+        {
+          "path": "/characters/departing_1/last_observed_location",
+          "before": "stairs",
+          "after": "courtyard"
+        },
+        {
+          "path": "/characters/departing_2/last_observed_location",
+          "before": "stairs",
+          "after": "courtyard"
+        }
+      ],
+      "observations": [
+        {
+          "observer": "student",
+          "kind": "reported_claim",
+          "content": "一人说大厅不让走"
+        },
+        {
+          "observer": "student",
+          "kind": "direct_observation",
+          "content": "两人走向院子；开门后户外声音变清楚"
+        }
+      ],
+      "uncertainty": [
+        "大厅实际封闭状况只有角色转述，不能据此修改全楼通行状态"
+      ],
+      "evidence": {
+        "document": "../drafts/01-临时通知-v0.2.md",
+        "exact_text": "他说完，伸手推开了门。",
+        "source_kind": "assistant_draft"
+      },
+      "revealed_at": {
+        "chapter": 1,
+        "scene": "opening-half",
+        "quote": "他说完，伸手推开了门。"
+      },
+      "certainty": "explicit_in_draft_not_adopted_canon"
+    },
+    {
+      "id": "E07",
+      "branch_id": "opening-v0.2",
+      "acceptance": "proposed",
+      "story_time": {
+        "physical_year": 2099,
+        "scene_year": 2026,
+        "relative_order": 7,
+        "exact_time": null
+      },
+      "participants": [
+        "student"
+      ],
+      "preconditions": [
+        "门处于打开状态",
+        "无人继续撑门",
+        "白车挡住部分视野"
+      ],
+      "intention": [],
+      "action": {
+        "actors": [
+          "student"
+        ],
+        "description": "男主松手，门逐渐合上；白发男子抬头；离楼两人被车辆遮挡"
+      },
+      "effects": [
+        {
+          "path": "/objects/rear_door/state",
+          "before": "open",
+          "after": "closed"
+        },
+        {
+          "path": "/characters/departing_1/last_observed_location",
+          "before": "courtyard",
+          "after": "courtyard_exit_occluded"
+        },
+        {
+          "path": "/characters/departing_2/last_observed_location",
+          "before": "courtyard",
+          "after": "courtyard_exit_occluded"
+        }
+      ],
+      "observations": [
+        {
+          "observer": "student",
+          "kind": "direct_observation",
+          "content": "男子头发很白、抬头看向门附近"
+        },
+        {
+          "observer": "student",
+          "kind": "direct_observation",
+          "content": "无法继续看见离楼者，没有听见尖叫撞击"
+        }
+      ],
+      "uncertainty": [
+        "白发不证明感染",
+        "离开视野不等于失踪或死亡",
+        "男主没有受伤"
+      ],
+      "evidence": {
+        "document": "../drafts/01-临时通知-v0.2.md",
+        "exact_text": "任由铁门慢慢合上。",
+        "source_kind": "assistant_draft"
+      },
+      "revealed_at": {
+        "chapter": 1,
+        "scene": "opening-half",
+        "quote": "任由铁门慢慢合上。"
+      },
+      "certainty": "explicit_in_draft_not_adopted_canon"
+    },
+    {
+      "id": "E08",
+      "branch_id": "opening-v0.2",
+      "acceptance": "proposed",
+      "story_time": {
+        "physical_year": 2099,
+        "scene_year": 2026,
+        "relative_order": 8,
+        "exact_time": null
+      },
+      "participants": [
+        "student",
+        "caller"
+      ],
+      "preconditions": [
+        "通话仍在继续"
+      ],
+      "intention": [
+        {
+          "actor": "caller",
+          "goal": "要求男主上楼寻找并救助女孩",
+          "certainty": "explicit_request"
+        }
+      ],
+      "action": {
+        "actors": [
+          "caller"
+        ],
+        "description": "来电者声称自己在2029年，并将楼上女孩称为三年前的自己"
+      },
+      "effects": [],
+      "observations": [
+        {
+          "observer": "student",
+          "kind": "identity_claim_received",
+          "content": "对方声称来自2029，要求救三年前的自己"
+        },
+        {
+          "observer": "student",
+          "kind": "self_report",
+          "content": "男主表示不信，但未挂断"
+        }
+      ],
+      "uncertainty": [
+        "当前女孩与电话实体不可合并",
+        "主角尚未知道来电者为AI",
+        "跨时空通信未获确认"
+      ],
+      "evidence": {
+        "document": "../drafts/01-临时通知-v0.2.md",
+        "exact_text": "你现在去救的，是三年前的我。",
+        "source_kind": "assistant_draft"
+      },
+      "revealed_at": {
+        "chapter": 1,
+        "scene": "opening-half",
+        "quote": "你现在去救的，是三年前的我。"
+      },
+      "certainty": "explicit_in_draft_not_adopted_canon"
+    },
+    {
+      "id": "E09",
+      "branch_id": "opening-v0.2",
+      "acceptance": "proposed",
+      "story_time": {
+        "physical_year": 2099,
+        "scene_year": 2026,
+        "relative_order": 9,
+        "exact_time": null
+      },
+      "participants": [
+        "student",
+        "notice_sender"
+      ],
+      "preconditions": [
+        "男主仍能收到群消息"
+      ],
+      "intention": [
+        {
+          "actor": "notice_sender",
+          "goal": "要求群成员按文字留在原处等候",
+          "certainty": "explicit_request"
+        }
+      ],
+      "action": {
+        "actors": [
+          "notice_sender"
+        ],
+        "description": "同一群发送者发布第二条通知；男主比较前后措辞"
+      },
+      "effects": [
+        {
+          "path": "/objects/group_messages/items",
+          "before": [
+            "notice_1"
+          ],
+          "after": [
+            "notice_1",
+            "notice_2"
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "observer": "student",
+          "kind": "message_received",
+          "content": "新文字要求楼内人员暂留原处，不自行前往出口"
+        },
+        {
+          "observer": "student",
+          "kind": "direct_observation",
+          "content": "先前通知与新通知之间仍夹着食堂菜单"
+        }
+      ],
+      "uncertainty": [
+        "通知变更不能证明来电者来自未来",
+        "男主尚未决定并执行上楼救援"
+      ],
+      "evidence": {
+        "document": "../drafts/01-临时通知-v0.2.md",
+        "exact_text": "暂勿自行前往一楼出口。",
+        "source_kind": "assistant_draft"
+      },
+      "revealed_at": {
+        "chapter": 1,
+        "scene": "opening-half",
+        "quote": "暂勿自行前往一楼出口。"
+      },
+      "certainty": "explicit_in_draft_not_adopted_canon"
+    }
+  ],
+  "causal_links": [
+    {
+      "from": [
+        "E01"
+      ],
+      "to": "E04",
+      "kind": "enabling_condition",
+      "claim": "等候解释来电时仍在后门的位置；不是电话必然发生的原因"
+    },
+    {
+      "from": [
+        "E04",
+        "E03"
+      ],
+      "to": "E05",
+      "kind": "information_and_motive",
+      "claim": "警告与模糊观察促成阻拦；二者不证明门外有危险"
+    },
+    {
+      "from": [
+        "E05"
+      ],
+      "to": "E06",
+      "kind": "interaction_condition",
+      "claim": "未能说明理由且停止有效阻拦，两人得以推门"
+    },
+    {
+      "from": [
+        "E06"
+      ],
+      "to": "E07",
+      "kind": "physical_transition",
+      "claim": "开门后松手，门逐渐合上"
+    },
+    {
+      "from": [
+        "E02",
+        "E08",
+        "E09"
+      ],
+      "to": "NEXT_DECISION",
+      "kind": "pending_information_conflict",
+      "claim": "通知变化与电话救援请求成为下一场决策的输入"
+    }
+  ],
+  "view_definitions": {
+    "global_state": "从initial_state顺序应用events.effects，未知仍为未知",
+    "causality": "读取preconditions、intention和有类型的causal_links；不把动机当充分条件",
+    "character_knowledge": "按observer筛选observations，保留direct_observation/message_received/hypothesis等差异",
+    "reader_disclosure": "只取对应revealed_at处可见的证据与叙述者理解；不暴露author_design与作者专属canon"
+  },
+  "author_design": {
+    "desired_effect": "在客观危险得到证明之前，让主角先承担怀疑与社交压力",
+    "optional_hypothesis": {
+      "id": "H01",
+      "status": "unconfirmed_draft",
+      "claim": "引导AI可取得门口视觉信息，但未必能看见楼上房间；本场不证明白车和通知由其调度"
+    },
+    "unresolved": [
+      "白车人员身份",
+      "离楼者去向",
+      "当前女孩所在房间及目标",
+      "新通知的原因",
+      "来电与女孩声音的关系"
+    ],
+    "scene_completion": "opening_half_only; rescue_not_started",
+    "next_scene": "通过当前女孩或独立渠道取得信息，再权衡通知与来电，发生首次有代价的救援行动"
+  }
+}

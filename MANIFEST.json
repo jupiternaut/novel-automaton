@@ -1,0 +1,196 @@
+{
+  "format_version": 1,
+  "self_excluded": true,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 47,
+      "sha256": "8c97a11936dedc8000808d4fa51e78ad54bbbc767263a7d32692c4af86922b01"
+    },
+    {
+      "path": "EPIGRAPH.md",
+      "bytes": 342,
+      "sha256": "2538fe799dd94e5c3f47de8778b8da77f53de21d582cfadc11adeec3d0ddf6ea"
+    },
+    {
+      "path": "PACKAGING.md",
+      "bytes": 1866,
+      "sha256": "c98906902571a21f690a4fdb7d5ba8d9895a4405c84b4a8c847c52f8292cf74b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2102,
+      "sha256": "41b5745c7005832f4ed7511c3a573fc8106c7b010f42ca998eba45369649b801"
+    },
+    {
+      "path": "RIGHTS.md",
+      "bytes": 570,
+      "sha256": "a923784eb3b01457a3837eb87af36e8c6cf4d258485d6803366d806c360e108e"
+    },
+    {
+      "path": "architecture/01-character-history/设计原文.md",
+      "bytes": 4351,
+      "sha256": "bc5ca4773b80a15c47a258a8d97de130804e667fc968af67f4b6bc152de92991"
+    },
+    {
+      "path": "architecture/02-world-events/设计原文.md",
+      "bytes": 5191,
+      "sha256": "b071c6925cc2c5116a311cba53547a662536384eb9ac5e73d8f99f2cc5483331"
+    },
+    {
+      "path": "architecture/README.md",
+      "bytes": 1617,
+      "sha256": "12e4a1f0e631c2df3c670c814e4a783edd9eff1009275955d6324dbd2b658fc8"
+    },
+    {
+      "path": "architecture/此前LightRAG观察-引用.md",
+      "bytes": 3334,
+      "sha256": "d77c16fe99e6bc3ac74ec92a8bb230aa7187c0de83d30ea2e75b702184c8a5f1"
+    },
+    {
+      "path": "references/README.md",
+      "bytes": 1368,
+      "sha256": "19fd4cd933bc4e87abd2d9b0de409db202421322a51424a0872e6086547c8a32"
+    },
+    {
+      "path": "references/snapshots/lightrag/LICENSE",
+      "bytes": 1070,
+      "sha256": "0c16924564059e493c86854574660a47ed1dcc2a476ba7b5f949d3f2f73a1984"
+    },
+    {
+      "path": "references/snapshots/lightrag/LOCAL_FORK.md",
+      "bytes": 4092,
+      "sha256": "984651ad3505c973710e7472c5a9ecbdc405c44fc4c2973b9726fdc40f7d80a0"
+    },
+    {
+      "path": "references/snapshots/plm/LICENSE",
+      "bytes": 10810,
+      "sha256": "fc2aa7e5e3f55eb7dc0d53b55c7deb330a217c91f7a8dc6a43ab35c59ac703e1"
+    },
+    {
+      "path": "references/snapshots/plm/PLM_WRITING_SPEC_HANDOFF.md",
+      "bytes": 10053,
+      "sha256": "9b761ae2613f6f0a62f62f2b23ec3c06e4dcfa49d0fb788ed0beb43ed9f48766"
+    },
+    {
+      "path": "references/snapshots/tavern/LICENSE",
+      "bytes": 10770,
+      "sha256": "9a75ace1224f0f880ddfdd8442d14d5a0d865152c61a2fd363d8e2c351f94d2c"
+    },
+    {
+      "path": "references/snapshots/tavern/staged-theater-control-loop.md",
+      "bytes": 11414,
+      "sha256": "5dc4c61e04f57d6a692cb021e341f0aec9a48e92506bfdd378b11f0e03848dac"
+    },
+    {
+      "path": "references/source-snapshots.json",
+      "bytes": 1584,
+      "sha256": "cb50dfb413e08134ad3e7bcf4c51f96057c10aa8283386c459cfcd55fe4ffb16"
+    },
+    {
+      "path": "scripts/rebuild_claude_manuscript.py",
+      "bytes": 1215,
+      "sha256": "1c6af904f69fe5efda7ce4330b88aa47bb65f9633c6d3019c5eb45b98bf57674"
+    },
+    {
+      "path": "scripts/verify_bundle.py",
+      "bytes": 1350,
+      "sha256": "525097fbb34c70f2e22c6bd8b723b5e72e7322b011e13837e0231244a8f923c8"
+    },
+    {
+      "path": "sources/design-messages/世界状态事件-用户原文.md",
+      "bytes": 9001,
+      "sha256": "62e5dac6d08bc89f51ac9eae3a650c95bc57c6f4000a3a48347e9783b6cf6098"
+    },
+    {
+      "path": "sources/design-messages/人物属性历史-用户原文.md",
+      "bytes": 4274,
+      "sha256": "98d3c6f5018542ee5a666d00d8e6e900809dfada961793c76d826300dc053213"
+    },
+    {
+      "path": "sources/gemini/README.md",
+      "bytes": 914,
+      "sha256": "6f1ee1c6a5029a0338553591d4e7d81592732b5e167aee1fb9eabd4e7bbe2e71"
+    },
+    {
+      "path": "sources/gemini/世界观整理.md",
+      "bytes": 33047,
+      "sha256": "e27af3e0e23fae94d90e8ad3521f97dc04e7f9e9444229387f8ad3ead1f0faa8"
+    },
+    {
+      "path": "sources/gemini/原始对话-按页文本.txt",
+      "bytes": 345427,
+      "sha256": "282543688a31883e3d8ae6a8a88d1f7427e7a561189b55a910925513b82f45cc"
+    },
+    {
+      "path": "sources/gemini/原始对话.pdf",
+      "bytes": 13806438,
+      "sha256": "ef70971ba9649730dd3fc4326f739dc8af0cbc1cc862617d950a9e337e16424d"
+    },
+    {
+      "path": "sources/gui-xiang-yi-qi/Claude合作稿-重建.md",
+      "bytes": 124796,
+      "sha256": "716c291ae77d56a0da6586e71532c56a0a9bc55887e2603f223fea74791cd1f3"
+    },
+    {
+      "path": "sources/gui-xiang-yi-qi/README.md",
+      "bytes": 1475,
+      "sha256": "881c65a4fa7f65ec8bb335289393ff046a069e7ea7de69ee217768ed559c8b99"
+    },
+    {
+      "path": "sources/gui-xiang-yi-qi/会话可见正文.md",
+      "bytes": 34525,
+      "sha256": "f6484ef3552f2802557ee914d04d0674647225bd4635aa3b07667783c0afdcb2"
+    },
+    {
+      "path": "sources/gui-xiang-yi-qi/原始稿.txt",
+      "bytes": 22856,
+      "sha256": "fb0fdec8d68fae95aeb9b0d9bf0328b40995ad7dbf0549bea3b58542601db3c3"
+    },
+    {
+      "path": "sources/gui-xiang-yi-qi/文学写入记录.json",
+      "bytes": 218418,
+      "sha256": "3167ab732661866a45f1c26d59ea7e5dc5fb3d724e4b2b1aa6602b6af7211903"
+    },
+    {
+      "path": "sources/gui-xiang-yi-qi/来源与重建.json",
+      "bytes": 1513,
+      "sha256": "14566cf911dac94ede7d835d81a7589e39b9ef473e299a60446778a0c82fbdfc"
+    },
+    {
+      "path": "sources/gui-xiang-yi-qi/第十章-南京安全屋.md",
+      "bytes": 23136,
+      "sha256": "7f7bb23af4038f82b77e6b666d5ebec9151f476bee28119c4c58d48d5aaed339"
+    },
+    {
+      "path": "workbench/START.md",
+      "bytes": 1169,
+      "sha256": "0d84fa6698345015ffbfb544a8d9719be63d83158db400b2b910fc251360c37e"
+    },
+    {
+      "path": "workbench/STYLE_AND_STATE.md",
+      "bytes": 8309,
+      "sha256": "fd5700077df0297e8cd10e2fd9a91f32393071355c03a1721c9bdd7b4f50d104"
+    },
+    {
+      "path": "workbench/archive/START-v0.1.md",
+      "bytes": 6892,
+      "sha256": "bf90c473c1002b02f1f8bad69abba2e2b3565cb5408b2f249f474c4519f5838b"
+    },
+    {
+      "path": "workbench/drafts/01-临时通知-v0.2.md",
+      "bytes": 8958,
+      "sha256": "b7f34f2a0ac1cf7f9f30e56aa99407ecaeb7c130467517af76eb1bc90489216d"
+    },
+    {
+      "path": "workbench/events/opening-v0.2.json",
+      "bytes": 22055,
+      "sha256": "2626d7300bdcd7e6bb27bd685bcab2d87dd370ec632197fbffd5b40b07aa29b5"
+    }
+  ]
+}

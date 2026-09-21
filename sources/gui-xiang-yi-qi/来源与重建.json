@@ -1,0 +1,55 @@
+{
+  "source": "/Users/gengrf/claude-chats-md/conversations/083-末日前夜的倒计时-284f486f.md",
+  "source_sha256": "10accf7ab2cbfa50abccdf70c3e400e01712f2c9e369c99172781bc27bdb470d",
+  "source_original_lines": [
+    30,
+    115
+  ],
+  "original_sha256": "fb0fdec8d68fae95aeb9b0d9bf0328b40995ad7dbf0549bea3b58542601db3c3",
+  "reconstructed_sha256": "716c291ae77d56a0da6586e71532c56a0a9bc55887e2603f223fea74791cd1f3",
+  "reconstructed_characters": 47049,
+  "reconstructed_chinese_characters": 34736,
+  "operations": 28,
+  "historical_skips": [
+    {
+      "line": 725,
+      "status": "historical_tool_error_skipped",
+      "tool": "create_file"
+    },
+    {
+      "line": 1374,
+      "status": "historical_tool_error_skipped",
+      "tool": "str_replace"
+    },
+    {
+      "line": 1461,
+      "status": "historical_tool_error_skipped",
+      "tool": "str_replace"
+    },
+    {
+      "line": 2299,
+      "status": "literal_replace_noop",
+      "matches": 0
+    },
+    {
+      "line": 3303,
+      "status": "literal_replace_noop",
+      "matches": 0
+    },
+    {
+      "line": 3485,
+      "status": "literal_replace_noop",
+      "matches": 0
+    }
+  ],
+  "method": "仅解析历史工具中的字符串字面量并按已识别文本操作重建；未执行任何原会话命令；没有找回旧docx二进制。",
+  "historical_confirmation": {
+    "source_tool_result_lines": [
+      5456,
+      5895
+    ],
+    "chinese_characters": 34736,
+    "utf8_bytes": 124796,
+    "matches_reconstruction": true
+  }
+}
